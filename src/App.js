@@ -9,6 +9,7 @@ function App() {
       <Button warning rounded>Warning</Button>
       <Button danger outline>Danger</Button>
       <Button outline rounded>Outline</Button>
+      <Button primary secondary>Error</Button>
     </div>
   );
 }
