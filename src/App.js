@@ -3,13 +3,22 @@ import { MdDangerous } from "react-icons/md";
 import Button from "./components/Button";
 
 function App() {
+
+  const handleClick = () => {
+    console.log("Click!");
+  }
+
+  const handleMouseOver = () => {
+    console.log("Mouse Over!");
+  }
+
   return (
     <div>
-      <Button primary outline>
+      <Button primary outline className="mb-5">
         <GoBell />
         Primary
       </Button>
-      <Button secondary>
+      <Button secondary onClick={handleClick}>
         <GoClockFill />
         Secondary
       </Button>
@@ -17,7 +26,7 @@ function App() {
         <GoHomeFill />
         Success
       </Button>
-      <Button warning rounded>Warning</Button>
+      <Button warning rounded onMouseOver={handleMouseOver}>Warning</Button>
       <Button danger outline>
         <MdDangerous />
         Danger
